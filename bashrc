@@ -161,6 +161,8 @@ export PATH=$PATH:$HOME/minio-binaries/
 
 alias gi='goimports -w -l .'
 alias lint='golangci-lint run *.go'
+alias dlint='docker run -t --rm -v $(pwd):/app -w /app golangci/golangci-lint:v1.62.2 golangci-lint run -v'
+alias dlintcache='docker run --rm -v $(pwd):/app -v ~/.cache/golangci-lint/v1.62.2:/root/.cache -w /app golangci/golangci-lint:v1.62.2 golangci-lint run -v'
 alias gt='go test -v ./...'
 alias tm='tmux at'
 
@@ -177,3 +179,13 @@ function trru() {
 export PATH=$PATH:/usr/local/nvim-linux64/bin
 
 . "$HOME/.cargo/env"
+
+
+fzf_cd() {
+  local dir
+  dir=$(find ${1:-.} -type d 2> /dev/null | fzf) && cd "$dir"
+}
+
+export BAT_THEME="GitHub"
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
