@@ -1,6 +1,9 @@
 [general]
 import = [
-   "~/.config/alacritty/themes/themes/night_owlish_light.toml"
+    # light
+    "~/.config/alacritty/themes/themes/night_owlish_light.toml"
+    # dark
+    #"~/.config/alacritty/themes/themes/dracula_plus.toml"
 ]
 
 [font]
@@ -9,4 +12,4 @@ normal.family = "JetBrainsMono Nerd Font"
 # bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
 # italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
 # bold_italic = { family = "JetBrainsMono Nerd Font", style = "Bold Italic" }
-size = 15
+size = 14
