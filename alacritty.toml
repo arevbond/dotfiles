@@ -1,9 +1,9 @@
 [general]
 import = [
     # light
-    "~/.config/alacritty/themes/themes/night_owlish_light.toml"
+    #"~/.config/alacritty/themes/themes/night_owlish_light.toml"
     # dark
-    #"~/.config/alacritty/themes/themes/dracula_plus.toml"
+    "~/.config/alacritty/themes/themes/dracula_plus.toml"
 ]
 
 [font]

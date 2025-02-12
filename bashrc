@@ -160,7 +160,7 @@ export PATH=$PATH:$HOME/go/bin
 export PATH=$PATH:$HOME/minio-binaries/
 
 alias gi='goimports -w -l .'
-alias lint='golangci-lint run *.go'
+alias lint='golangci-lint run ./...'
 alias dlint='docker run -t --rm -v $(pwd):/app -w /app golangci/golangci-lint:v1.62.2 golangci-lint run -v'
 alias dlintcache='docker run --rm -v $(pwd):/app -v ~/.cache/golangci-lint/v1.62.2:/root/.cache -w /app golangci/golangci-lint:v1.62.2 golangci-lint run -v'
 alias gt='go test -v ./...'
@@ -168,6 +168,9 @@ alias tm='tmux at'
 
 alias vpnup='nmcli connection up id simbirsoft'
 alias vpndown='nmcli connection down id simbirsoft'
+
+alias wcgo='find . -name "*.go" -type f | xargs wc -l | tail -n 1'
+
 function tr() {
     trans -t ru "$@"
 }
