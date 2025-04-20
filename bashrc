@@ -192,3 +192,6 @@ fzf_cd() {
 export BAT_THEME="GitHub"
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# gcc hello.c -o hello 
+alias gcc11='gcc -std=c11 -Wall -Werror -Wextra'
