@@ -1,7 +1,7 @@
 [
   {
     "bindings": {
-      "ctrl-shift-[": "pane::ActivatePrevItem",
+      "ctrl-shift-[": "pane::ActivatePreviousItem",
       "ctrl-shift-]": "pane::ActivateNextItem"
     }
   },
@@ -39,9 +39,9 @@
       "ctrl-shift-b": "editor::GoToTypeDefinition",
       "ctrl-alt-shift-b": "editor::GoToTypeDefinitionSplit",
       "f2": "editor::GoToDiagnostic",
-      "shift-f2": "editor::GoToPrevDiagnostic",
+      "shift-f2": "editor::GoToPreviousDiagnostic",
       "ctrl-alt-shift-down": "editor::GoToHunk",
-      "ctrl-alt-shift-up": "editor::GoToPrevHunk",
+      //  "ctrl-alt-shift-up": "editor::GoToPrevHunk",
       "ctrl-home": "editor::MoveToBeginning",
       "ctrl-end": "editor::MoveToEnd",
       "ctrl-shift-home": "editor::SelectToBeginning",
